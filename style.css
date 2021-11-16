@@ -24,16 +24,54 @@
 
 body
 {
-    background-color: var(--charcoal-cor);
-    font-family: 'Oswald',sans-serif;
-    text-align: center;
-    overflow: hidden; /*BARRA DE SCROLL DOWN, HIDDEN ESCONDIDA*/
-    margin: 0;
-    font-weight: 700;
-    /*overflow-x: hidden; /*REMOVER BARRA DE SCROLL HORIZONTAL*/
+    background-color: darksalmon;
+    font-family: 'Inconsolata',sans-serif;
+    font-weight: 800;
+    display: flex;          /*coloca tudo em linha*/
+    flex-direction: column; /*coloca tudo em coluna*/
+     align-items: center;    /*alinha horizontalmente*/
+     justify-content: center;/*alinha tudo verticalmente com uso de height:100vh*/
+    height: 100vh;
+     overflow: hidden; /*BARRA DE SCROLL DOWN, HIDDEN ESCONDIDA*/
+     margin: 0;
+     overflow-x: hidden; /*REMOVER BARRA DE SCROLL HORIZONTAL*/
+     padding: 20px;
 }
 
+div{
+    position: absolute;
+    bottom: 20px;
+    background: rgba(0,0,0,0.1);
+    padding: 10px 20px;
+    font-size: 18px;
+}
 
+#vel input {
+    width: 50px;
+    padding: 5px;
+    font-size: 18px;
+    background-color: darkred;
+    color: #fff;
+    text-align: center;
+    border: none;
+}
+
+#vel input:focus {
+    outline: none;
+}
+
+#txtInput{
+    position: relative;
+}
+
+#txtInput{
+    font-family: inherit;
+    font-weight: 900;
+    font-size: 20px;
+    height: 48px;
+    width: 100%;
+    text-align: center;
+}
 
 
 
@@ -71,9 +109,9 @@ footer{
     color: #fff;
     font-family:'Inconsolata',sans-serif ;
     text-align: center;
-    border: 1px solid var(--charcoal-cor);
+    /* border: 1px solid var(--charcoal-cor); */
     position: absolute;
-    bottom: 0rem;
+    top: 4rem;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: 500;
@@ -81,18 +119,18 @@ footer{
 }
 
 footer:hover{
-    font-weight: 900;
-    background-color: var(--green-cor);
-    color: #412234;
+    background-color: #333;
+    color: #fff;
     border-radius: 20px;
+    transform: translate(-50%,-50%) scale(1.2);
 }
 footer:hover a{
-    font-weight: 900;
-    color: #412234;
+    color: yellow;
+    font-weight: 700;
 }
 footer:hover a:hover{
     font-weight: 900;
-    color: var(--secondary-cor);
+    color:greenyellow;
 }
 
 footer a{
